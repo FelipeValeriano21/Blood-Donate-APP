@@ -37,10 +37,10 @@ if (isset($_SESSION['usuario_id']) && isset($_SESSION['usuario_nome'])) {
                                     <div class="collapse navbar-collapse" id="menu">
                                         <ul class="navbar-nav flex-grow-1 justify-content-between">
                                             <li class="nav-item d-none d-xs-block d-md-block"><a class="nav-link" style="color: white;" href="/menu"><i class="fa fa-heartbeat apple-logo"></i></a></li>
-                                            <li class="nav-item"><a class="nav-link" style="color: white;" href="">Bancos de Sangue</a></li>
-                                            <li class="nav-item"><a class="nav-link" style="color: white;" href="">Meu Calendario</a></li>
-                                            <li class="nav-item"><a class="nav-link" style="color: white;" href="/Profile">Meu Perfil</a></li>
-                                            <li class="nav-item d-none d-xs-block d-md-block"><a class="nav-link" style="color: white;" href="/Login"><i class="icon ion-android-exit"></i></a></li>
+                                            <li class="nav-item"><a class="nav-link" style="color: white;" href="/bancosdesangue">Bancos de Sangue</a></li>
+                                            <li class="nav-item"><a class="nav-link" style="color: white;" href="/calendario">Meu Calendario</a></li>
+                                            <li class="nav-item"><a class="nav-link" style="color: white;" href="/profile">Meu Perfil</a></li>
+                                            <li class="nav-item d-none d-xs-block d-md-block"><a class="nav-link" style="color: white;" href="/logout"><i class="icon ion-android-exit"></i></a></li>
                                            
                                         </ul>
                                     </div>

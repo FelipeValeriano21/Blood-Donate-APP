@@ -32,12 +32,26 @@ switch($url)
         clientController::menu();
     break;
 
-    case '/Profile':
+    case '/profile':
         clientController::profile();
     break;
+    
+    case '/logout':
+        clientController::logout();
+    break;
+
+    case '/bancosdesangue':
+        clientController::bancosdesangue();
+    break;
+
+    case '/calendario':
+        clientController::calendario();
+    break;
+
+    
 
     default:
-        echo("Tela de 404");
+    clientController::erro404();
 }
     
 

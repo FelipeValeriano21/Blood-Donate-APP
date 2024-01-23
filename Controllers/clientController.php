@@ -42,16 +42,22 @@ class clientController
     
         if ($resultados !== false) {
             session_start();
-    
+         
+
             $_SESSION['usuario_id'] = $resultados[0]->idClient;
             $_SESSION['usuario_nome'] = $resultados[0]->ClientName;
             $_SESSION['usuario_email'] = $resultados[0]->ClientEmail;
-
+            $_SESSION['usuario_idade'] = $resultados[0]->ClientAge;
+            $_SESSION['usuario_telefone'] = $resultados[0]->ClientTel;
+            $_SESSION['usuario_senha'] = $resultados[0]->ClientPassword;
+    
             header('Location: /menu');
-            exit;
-            
+    
         } else {
-            echo "Login falhou. Usuário ou senha inválidos.";
+             session_start();
+            $_SESSION['loginerror'] = "";
+            include 'Views/login.php';
+            exit;
         }
     }
     
@@ -75,5 +81,29 @@ class clientController
         }
     }
 
+    public static function logout()
+    {
+        session_start();
+        session_destroy();
+        session_unset();
+        header('Location: /Login');
+    }
+
+    public static function bancosdesangue()
+    {
+        session_start();
+        include 'Views/bancodesangue.php';
+    }
+
+    public static function calendario()
+    {
+        session_start();
+        include 'Views/calendario.php';
+    }
+
+    public static function erro404()
+    {
+        include 'Views/404.php'; 
+    }
 
 }

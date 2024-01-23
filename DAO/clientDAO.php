@@ -37,6 +37,7 @@ class clientDAO
         $stmt = $this->conexao->prepare("SELECT * FROM `client` WHERE `ClientEmail` = ? AND `ClientPassword` = ?");
         $stmt->bindValue(1, $model->email);
         $stmt->bindValue(2, $model->senha);
+        
         $stmt->execute();
         return $stmt->fetchAll(PDO::FETCH_CLASS);
 

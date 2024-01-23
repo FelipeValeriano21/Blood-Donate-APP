@@ -3,12 +3,14 @@
         <div class="container">
              <div class="row">
                  <div class="col">
-                    <h3>Bem vindo(a), <?php echo $usuario_nome ?></h3>
+                    <h5>Bem vindo(a), <?php echo $usuario_nome ?></h5>
                 </div>
-                <div class="col">
+      
+            </div>
+            <div class="col mt-5">
                     <div class="container text-center boxed-countdown" data-countdown="09/15/2021 23:59:59">
                         <div class="row" style="margin-right: 15px;margin-left: 15px;">
-                            <h3>Nova doação em</h3>
+                            <h4>Tempo para a próxima doação</h4>
                             <div class="col-6 col-md-3 mt-3 fw-bolder">
                                 <p class="number-days m-0 rounded-top " style="background: #991217; color:white;">00</p>
                                 <p class="text-countdown rounded-bottom bg-light text-danger">Days</p>
@@ -28,7 +30,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
             
 
