@@ -5,6 +5,7 @@ class clientModel
 
     public $nome, $idade, $email, $telefone, $senha; 
     public $rows;
+    public $id;
 
 
 
@@ -20,7 +21,6 @@ class clientModel
         $dao = new clientDAO();
 
         $dao->insert($this);
-
 
     }
 
@@ -38,6 +38,23 @@ class clientModel
         } else {
             return $resultados;
            
+        }
+    }
+
+    public function update()
+    {
+        include 'DAO/clientDAO.php';
+    
+        $dao = new clientDAO();
+    
+        $result = $dao->update($this);
+    
+        if ($result) {
+            header("Location: /menu");
+            
+            exit(); // Certifique-se de encerrar o script após o redirecionamento
+        } else {
+            echo "Erro na atualização. Verifique o log para mais detalhes.";
         }
     }
 }    

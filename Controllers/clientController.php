@@ -106,4 +106,28 @@ class clientController
         include 'Views/404.php'; 
     }
 
+    public static function update()
+    {
+
+        session_start();
+
+        include 'Models/clientModel.php';
+
+        $model = new clientModel();
+
+        $model->id = $_POST['id'];
+        $model->nome = $_POST['nome'];
+        $model->idade = $_POST['idade'];
+        $model->email = $_POST['email'];
+        $model->telefone = $_POST['telefone'];
+        $model->senha = $_POST['senha'];
+
+        var_dump($model);
+        
+        $model->update();
+
+        
+
+    }
+
 }

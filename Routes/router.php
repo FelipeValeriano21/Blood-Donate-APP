@@ -48,8 +48,10 @@ switch($url)
         clientController::calendario();
     break;
 
+    case '/update':
+        clientController::update();
+    break;
     
-
     default:
     clientController::erro404();
 }

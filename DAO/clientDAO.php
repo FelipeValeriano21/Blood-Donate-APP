@@ -43,7 +43,23 @@ class clientDAO
 
 
     }
-    
+
+
+        public function update(clientModel $model)
+    {
+
+        $sql = "UPDATE `client` SET `ClientName`=?, `ClientAge`=?, `ClientTel`=?, `ClientEmail`=?, `ClientPassword`=? WHERE `idClient`=?";
+        $stmt = $this->conexao->prepare($sql);
+        $stmt->bindValue(1, $model->nome);
+        $stmt->bindValue(2, $model->idade);
+        $stmt->bindValue(3, $model->telefone);
+        $stmt->bindValue(4, $model->email);
+        $stmt->bindValue(5, $model->senha);
+        $stmt->bindValue(6, $model->id);
+        $stmt->execute();
+        return true;
+
+    }
 
 
 }

@@ -2,6 +2,7 @@
 
 <?php 
 
+$id = $_SESSION['usuario_id'];
 $nome = $_SESSION['usuario_nome'];
 $email = $_SESSION['usuario_email'];
 $idade = $_SESSION['usuario_idade'];
@@ -23,43 +24,39 @@ $senha = $_SESSION['usuario_senha'];
 
 <body>
     <div class="container profile profile-view mt-5" id="profile">
-  
-        <form>
             <div class="row profile-row">
                 <div class="col-md-4 relative">
                     <div class="avatar">
-                    <img src="../Views/assets/img/junior.png" class="img-fluid " alt="Responsive image">
-                       
+                    <img src="../Views/assets/img/junior.png" class="img-fluid " alt="Responsive image">  
                     </div>
-                    
                 </div>
                 <div class="col-md-8">
                     <h1>Perfil</h1>
                     <hr>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group mb-3"><label class="form-label">Nome</label><input class="form-control" type="text" name="firstname" value="<?php echo $nome ?>"></div>
+                    <form action="/update" method="POST">
+                        <div class="row">
+                        <input type="hidden" name="id" id="id" value="<?php echo $id; ?>">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group mb-3"><label class="form-label">Nome</label><input class="form-control" type="text" name="nome" value="<?php echo $nome ?>"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group mb-3"><label class="form-label">Idade (anos)</label><input class="form-control" type="text" name="idade" value="<?php echo $idade ?>"></div>
+                            </div>
                         </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group mb-3"><label class="form-label">Idade (anos)</label><input class="form-control" type="text" name="lastname" value="<?php echo $idade ?>"></div>
+                        <div class="form-group mb-3"><label class="form-label">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" value="<?php echo $email ?>"></div>
+                        <div class="row">
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group mb-3"><label class="form-label">Telefone</label><input class="form-control" type="text" name="telefone" autocomplete="off" required="" value="<?php echo $telefone ?>"></div>
+                            </div>
+                            <div class="col-sm-12 col-md-6">
+                                <div class="form-group mb-3"><label class="form-label">Senha</label><input class="form-control" type="password" name="senha" autocomplete="off" required="" value="<?php echo $senha ?>"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group mb-3"><label class="form-label">Email </label><input class="form-control" type="email" autocomplete="off" required="" name="email" value="<?php echo $email ?>"></div>
-                    <div class="row">
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group mb-3"><label class="form-label">Telefone</label><input class="form-control" type="text" name="password" autocomplete="off" required="" value="<?php echo $telefone ?>"></div>
-                        </div>
-                        <div class="col-sm-12 col-md-6">
-                            <div class="form-group mb-3"><label class="form-label">Senha</label><input class="form-control" type="password" name="confirmpass" autocomplete="off" required="" value="<?php echo $senha ?>"></div>
-                        </div>
-                    </div>
+                        <button class="btn btn-danger form-btn" type="submit" style="background: #991217;">Salvar dados</button></div>
+                    </form>
                     <hr>
-                   
-                      <button class="btn btn-danger form-btn" type="reset" style="background: #991217;">Salvar dados</button></div>
-                    
                 </div>
             </div>
-        </form>
     </div>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/script.min.js"></script>
