@@ -7,144 +7,153 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Untitled</title>
-    <link rel="stylesheet" href="../views/assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400i,700,700i">
-    <link rel="stylesheet" href="../views/assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="../views/assets/css/styles.min.css">
+    <link rel="stylesheet" href="../Views/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../Views/assets/css/styles.min.css">
 </head>
 
-<body>
-    <div class="mt-5 mb-5">
-        <div class="container" id="cal"><i class="fa fa-calendar-o d-none"></i>
-            <h1>Calendario de Doação</h1>
-            <div class="row d-none d-md-flex seven-cols days-sticky">
-                <div class="col-md-1 day days">
-                    <p class="text-center text-white" style="background: #991217;">Domingo</p>
-                </div>
-                <div class="col-md-1 day days">
-                    <p class="text-center text-white" style="background: #991217;">Segunda</p>
-                </div>
-                <div class="col-md-1 day days">
-                    <p class="text-center text-white" style="background: #991217;">Terça</p>
-                </div>
-                <div class="col-md-1 day days">
-                    <p class="text-center text-white" style="background: #991217;">Quarta</p>
-                </div>
-                <div class="col-md-1 day days">
-                    <p class="text-center text-white" style="background: #991217;">Quinta</p>
-                </div>
-                <div class="col-md-1 day days">
-                    <p class="text-center text-white" style="background: #991217;">Sexta</p>
-                </div>
-                <div class="col-md-1 day days">
-                    <p class="text-center text-white">Sabado</p>
-                </div>
-            </div>
-            <div class="row seven-cols">
-                <div class="col-md-1 text-truncate d-none d-md-block ps-1 pe-1 day-blank"></div>
-                <div class="col-md-1 text-truncate d-none d-md-block ps-1 pe-1 day-blank"></div>
-                <div class="col-md-1 text-truncate d-none d-md-block ps-1 pe-1 day-blank"></div>
-                <div class="col-md-1 text-truncate d-none d-md-block ps-1 pe-1 day-blank"></div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">1</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">2</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">3</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">4</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">5</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">6</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">7</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">8</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">9</p>
-                    <p class="text-truncate text-center text-white bg-danger event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">Dia de doar</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">10</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">11</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">12</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">13</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">14</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">15</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">16</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">17</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">18</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">19</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="text-nowrap date">20</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">21</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">22</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">23</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">24</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="text-nowrap date">25</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">26</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">27</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">28</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">29</p>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">30</p><a href="#"></a>
-                </div>
-                <div class="col-md-1 day bg-events">
-                    <p class="date">31</p><a href="#"></a>
-                    <p class="text-truncate text-center text-white bg-danger event" data-bs-toggle="tooltip" data-bss-tooltip="" title="Click for more info">Dia de doar</p>
-                </div>
-            </div>
-        </div>
+<body><div class="bootstrap_calendar">
+<div class="container py-5">
+
+  <!-- For Demo Purpose -->
+  <header class="text-center text-white mb-5">
+    <h1 class="display-4">Bootstrap Calendar</h1>
+  </header>
+
+
+  <!-- Calendar -->
+  <div class="calendar shadow bg-white p-5">
+    <div class="d-flex align-items-center"><i class="fa fa-calendar fa-3x mr-3"></i>
+      <h2 class="month font-weight-bold mb-0 text-uppercase">December 2019</h2>
     </div>
+    <p class="font-italic text-muted mb-5">No events for this day.</p>
+    <ol class="day-names list-unstyled">
+      <li class="font-weight-bold text-uppercase">Sun</li>
+      <li class="font-weight-bold text-uppercase">Mon</li>
+      <li class="font-weight-bold text-uppercase">Tue</li>
+      <li class="font-weight-bold text-uppercase">Wed</li>
+      <li class="font-weight-bold text-uppercase">Thu</li>
+      <li class="font-weight-bold text-uppercase">Fri</li>
+      <li class="font-weight-bold text-uppercase">Sat</li>
+    </ol>
+
+    <ol class="days list-unstyled">
+      <li>
+        <div class="date">1</div>
+        <div class="event bg-success">Event with Long Name</div>
+      </li>
+      <li>
+        <div class="date">2</div>
+      </li>
+      <li>
+        <div class="date">3</div>
+      </li>
+      <li>
+        <div class="date">4</div>
+      </li>
+      <li>
+        <div class="date">5</div>
+      </li>
+      <li>
+        <div class="date">6</div>
+      </li>
+      <li>
+        <div class="date">7</div>
+      </li>
+      <li>
+        <div class="date">8</div>
+      </li>
+      <li>
+        <div class="date">9</div>
+      </li>
+      <li>
+        <div class="date">10</div>
+      </li>
+      <li>
+        <div class="date">11</div>
+      </li>
+      <li>
+        <div class="date">12</div>
+      </li>
+      <li>
+        <div class="date">13</div>
+        <div class="event all-day begin span-2 bg-warning">Event Name</div>
+      </li>
+      <li>
+        <div class="date">14</div>
+      </li>
+      <li>
+        <div class="date">15</div>
+        <div class="event all-day end bg-success">Event Name</div>
+      </li>
+      <li>
+        <div class="date">16</div>
+      </li>
+      <li>
+        <div class="date">17</div>
+      </li>
+      <li>
+        <div class="date">18</div>
+      </li>
+      <li>
+        <div class="date">19</div>
+      </li>
+      <li>
+        <div class="date">20</div>
+      </li>
+      <li>
+        <div class="date">21</div>
+        <div class="event bg-primary">Event Name</div>
+        <div class="event bg-success">Event Name</div>
+      </li>
+      <li>
+        <div class="date">22</div>
+        <div class="event bg-info">Event with Longer Name</div>
+      </li>
+      <li>
+        <div class="date">23</div>
+      </li>
+      <li>
+        <div class="date">24</div>
+      </li>
+      <li>
+        <div class="date">25</div>
+      </li>
+      <li>
+        <div class="date">26</div>
+      </li>
+      <li>
+        <div class="date">27</div>
+      </li>
+      <li>
+        <div class="date">28</div>
+      </li>
+      <li>
+        <div class="date">29</div>
+      </li>
+      <li>
+        <div class="date">30</div>
+      </li>
+      <li>
+        <div class="date">31</div>
+      </li>
+      <li class="outside">
+        <div class="date">1</div>
+      </li>
+      <li class="outside">
+        <div class="date">2</div>
+      </li>
+      <li class="outside">
+        <div class="date">3</div>
+      </li>
+      <li class="outside">
+        <div class="date">4</div>
+      </li>
+    </ol>
+  </div>
+</div>
+</div>
     <script src="../views/assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="../views/assets/js/script.min.js"></script>
 </body>
 
 </html>

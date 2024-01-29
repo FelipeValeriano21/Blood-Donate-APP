@@ -52,7 +52,7 @@ class clientModel
         if ($result) {
             header("Location: /menu");
             
-            exit(); // Certifique-se de encerrar o script após o redirecionamento
+            exit(); 
         } else {
             echo "Erro na atualização. Verifique o log para mais detalhes.";
         }
